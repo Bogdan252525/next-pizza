@@ -16,7 +16,7 @@ export const categories = [
 	},
 ]
 
-export const ingredients = [
+export const _ingredients = [
   {
     name: 'Сырный бортик',
     price: 179,
@@ -58,7 +58,7 @@ export const ingredients = [
   {
     name: 'Пикантная пепперони',
     price: 79,
-    imageUrl: '/images/ingredients/spicy-pepperony.png',
+    imageUrl: '/images/ingredients/spicy-pepperoni.png',
   },
   {
     name: 'Острая чоризо',
@@ -94,7 +94,7 @@ export const ingredients = [
   {
     name: 'Сладкий перец',
     price: 59,
-    imageUrl: '/images/ingredients/.png',
+    imageUrl: '/images/ingredients/sweet-pepper.png',
   },
   {
     name: 'Кубики брынзы',

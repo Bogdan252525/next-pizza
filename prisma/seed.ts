@@ -1,5 +1,5 @@
 import { Prisma } from "@prisma/client";
-import { categories, ingredients, products } from "./constants";
+import { categories, _ingredients, products } from "./constants";
 import { prisma } from "./prisma-client"
 import { hashSync } from "bcrypt"
 
@@ -50,7 +50,7 @@ async function up() {
 	})
 
 	await prisma.ingredient.createMany({
-		data: ingredients
+		data: _ingredients
 	})
 
 	await prisma.product.createMany({
@@ -64,7 +64,7 @@ async function up() {
         '/images/pizzas/pepperoni-fresh.webp',
       categoryId: 1,
       ingredients: {
-        connect: ingredients.slice(0, 5),
+        connect: _ingredients.slice(0, 5),
       },
     },
   });
@@ -76,7 +76,7 @@ async function up() {
         '/images/pizzas/cheese.webp',
       categoryId: 1,
       ingredients: {
-        connect: ingredients.slice(5, 10),
+        connect: _ingredients.slice(5, 10),
       },
     },
   });
@@ -88,7 +88,7 @@ async function up() {
         '/images/pizzas/chorizo-fresh.webp',
       categoryId: 1,
       ingredients: {
-        connect: ingredients.slice(10, 40),
+        connect: _ingredients.slice(10, 40),
       },
     },
   });
